@@ -9,7 +9,7 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
-  origin: '*',  
+  origin: 'https://fronte-60xb.onrender.com',  
   methods: ['GET', 'POST', 'PUT'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true, 
@@ -28,10 +28,10 @@ mongoose.connect(process.env.MONGO_URI)
 
 app.get("/", (req, res) => {
   res.json({
-    groupNo: "1",
-    nameOfGroup: "Uni Group Members",
-    members: ["Aliha", "Hashir", "Abdullah"],
-    projectTitle: "University Web App",
+    groupNo: "123",
+    nameOfGroup: "Project Team",
+    members: ["Majid", "Absar", "Bilal"],
+    projectTitle: "Application Server",
   });
 });
 
