@@ -28,10 +28,10 @@ mongoose.connect(process.env.MONGO_URI)
 
 app.get("/", (req, res) => {
   res.json({
-    groupNo: "123",
-    nameOfGroup: "Project Team",
-    members: ["Majid", "Absar", "Bilal"],
-    projectTitle: "Application Server",
+    groupNo: "1",
+    nameOfGroup: "Uni Group Members",
+    members: ["Aliha", "Hashir", "Abdullah"],
+    projectTitle: "University Web App",
   });
 });
 
