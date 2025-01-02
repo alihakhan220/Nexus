@@ -8,7 +8,7 @@ const app = express();
 const PORT = process.env.PORT || 6000;
 
 const corsConfig = {
-  origin: ["*"],
+  origin: ["https://fronte-60xb.onrender.com"],
 }
 
 mongoose
